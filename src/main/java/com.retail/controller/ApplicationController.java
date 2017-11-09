@@ -3,6 +3,7 @@ package com.retail.controller;
 import com.retail.model.Product;
 import com.retail.model.Response;
 import com.retail.service.ApplicationService;
+import com.retail.utils.ProductDetailGenerator;
 import io.reactivex.Observable;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -33,11 +34,8 @@ public class ApplicationController{
 
   @RequestMapping(value = "/product/getProductName", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
   public Product getProductName(@RequestParam (value = "id") int id) {
-    Product product = new Product();
-    product.setId(id);
-    product.setName("Primary Product Name");
-    product.setDescription("Short Description of the product");
-    return product;
+    ProductDetailGenerator dataGenerator = new ProductDetailGenerator(id);
+    return dataGenerator.getMockProduct();
   }
 
   public static void main(String[] args) {

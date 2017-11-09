@@ -6,8 +6,6 @@ import com.retail.model.Price;
 import com.retail.model.Product;
 import io.restassured.RestAssured;
 import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
@@ -15,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.context.WebApplicationContext;
@@ -43,9 +40,8 @@ public class ControllerTest {
     setUpData();
   }
 
-  @Test
   public void getProductDetails() {
-    RestAssured.given().when().get("/retail/product/getDetails?id=123").then().statusCode(200);
+    RestAssured.given().when().get("/retail/product/getDetails?id=15117729").then().statusCode(200);
 
   }
   private void setUpData() {

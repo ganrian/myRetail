@@ -1,0 +1,38 @@
+[
+  {
+    "id": 15117729,
+    "name": "Sony Bravia 4K 54 Inches",
+    "description": "Ultra HD 1080p Sony Smart TV",
+    "price": "899.99"
+  },
+  {
+    "id": 16483589,
+    "name": "Samsung 48 Inch TV",
+    "description": "Samsung LED Smart TV",
+    "price": "599.99"
+  },
+  {
+    "id": 16696652,
+    "name": "Microsoft XBOX One S 500 GB",
+    "description": "New XBOX One S 500 GB bundle with Assasin's Creed download for XBOX",
+    "price": "299.99"
+  },
+  {
+    "id": 16752456,
+    "name": "Sony PS4",
+    "description": "PS4 Gaming Console with 3D Ready",
+    "price": "399.99"
+  },
+  {
+    "id": 13860428,
+    "name": "The Big Lebowski (Blu-ray)",
+    "description": "Blu-Ray DVD Disc",
+    "price": "19.99"
+  },
+  {
+    "id": 15643793,
+    "name": "ACER Predator G6",
+    "description": "ACER Desktop PC, Intel I7700k with 12 MB L3 Cache, 8 GB GDDR5 Nvidia Geforce GTX 1080 Graphics memory",
+    "price": "999.99"
+  }
+]

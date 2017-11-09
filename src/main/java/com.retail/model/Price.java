@@ -1,7 +1,5 @@
 package com.retail.model;
 
-import org.springframework.data.annotation.Id;
-
 public class Price {
 
   public Long productId;
