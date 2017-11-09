@@ -21,7 +21,7 @@ public class ProductDetailGenerator {
     try {
       ObjectMapper mapper = new ObjectMapper();
       ClassLoader classLoader = getClass().getClassLoader();
-      File file = new File(classLoader.getResource("mockData.json").getFile().replace("%23","#"));
+      File file = new File(classLoader.getResource("mockData.json").getFile());
 
       TypeFactory typeFactory = mapper.getTypeFactory();
       CollectionType collectionType = typeFactory.constructCollectionType(List.class, Product.class);
